@@ -6,8 +6,17 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-This project contains exercises and homework tasks created as part of a module in the **Kodilla "Automated Tester" Java course**, focusing on Maps in Java 21.  
-The module focuses on advanced collections, immutability, nested structures, multimaps, and mapping relationships using Java Maps.
+This project contains exercises and homework tasks created as part of a module in the **Kodilla "Automated Tester" Java course**, focusing on **Maps and Immutable Maps** in Java 21.  
+
+The module focuses on:
+- advanced collections
+- immutability
+- nested structures
+- multimaps
+- mapping relationships using Java Maps
+
+The project was developed in **IntelliJ IDEA** as part of the learning path for future **QA/Test Automation Engineers**.
+
 
 ---
 
