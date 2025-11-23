@@ -4,7 +4,7 @@
 ![Gradle](https://img.shields.io/badge/Gradle-8-green)
 ![JUnit](https://img.shields.io/badge/JUnit-5.9.3-purple)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Status: Completed](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 This project contains exercises and homework tasks created as part of a module in the **Kodilla "Automated Tester" Java course**, focusing on **Maps and Immutable Maps** in Java 21.  
 
