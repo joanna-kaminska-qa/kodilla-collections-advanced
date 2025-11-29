@@ -65,91 +65,29 @@ All exercises were developed in **IntelliJ IDEA** as part of the Kodilla learnin
 ```
 kodilla-collections-advanced/
 ├── build.gradle
-├── gradlew
-├── gradlew.bat
+├── gradlew / gradlew.bat
 ├── LICENSE
 ├── README.md
-│
 ├── .gradle/
-│   └── 8.13/...
-│
 ├── .idea/
-│   ├── compiler.xml
-│   ├── gradle.xml
-│   ├── misc.xml
-│   ├── workspace.xml
-│   └── vcs.xml
-│
 ├── build/
-│   ├── classes/java/main/com/kodilla/
-│   │   ├── Main.class
-│   │   └── collections/adv/
-│   │       ├── exercises/
-│   │       │   ├── dictionary/
-│   │       │   │   ├── Dictionary.class
-│   │       │   │   ├── EnglishWord.class
-│   │       │   │   └── PartOfSpeech.class
-│   │       │   └── homework/
-│   │       │       ├── Flight.class
-│   │       │       ├── FlightFinder.class
-│   │       │       └── FlightRepository.class
-│   │       ├── immutable/
-│   │       │   ├── Book.class
-│   │       │   ├── BookRecord.class
-│   │       │   ├── ImmutableExample.class
-│   │       │   └── homework/
-│   │       │       └── Task.class
-│   │       └── maps/
-│   │           ├── BasicMapExample.class
-│   │           ├── complex/
-│   │           │   ├── ComplexMapExample.class
-│   │           │   ├── Grades.class
-│   │           │   └── Student.class
-│   │           └── homework/
-│   │               ├── Principal.class
-│   │               ├── School.class
-│   │               └── SchoolDirectory.class
-│   │
-│   ├── classes/java/test/com/kodilla/collections/adv/
-│   │   ├── exercises/dictionary/DictionaryTestSuite.class
-│   │   └── exercises/homework/FlightFinderTestSuite.class
-│   │
-│   └── libs/kodilla-collections-advanced-1.0-SNAPSHOT.jar
-│
+│ ├── classes/java/main/com/kodilla/collections/adv/...
+│ └── classes/java/test/com/kodilla/collections/adv/...
 └── src/
-    ├── main/java/com/kodilla/
-    │   ├── Main.java
-    │   └── collections/adv/
-    │       ├── exercises/
-    │       │   ├── dictionary/
-    │       │   │   ├── Dictionary.java
-    │       │   │   ├── EnglishWord.java
-    │       │   │   └── PartOfSpeech.java
-    │       │   └── homework/
-    │       │       ├── Flight.java
-    │       │       ├── FlightFinder.java
-    │       │       └── FlightRepository.java
-    │       ├── immutable/
-    │       │   ├── Book.java
-    │       │   ├── BookRecord.java
-    │       │   ├── ImmutableExample.java
-    │       │   └── homework/
-    │       │       └── Task.java
-    │       └── maps/
-    │           ├── BasicMapExample.java
-    │           ├── complex/
-    │           │   ├── ComplexMapExample.java
-    │           │   ├── Grades.java
-    │           │   └── Student.java
-    │           └── homework/
-    │               ├── Principal.java
-    │               ├── School.java
-    │               └── SchoolDirectory.java
-    │
-    ├── main/resources/
-    └── test/java/com/kodilla/collections/adv/
-        ├── exercises/dictionary/DictionaryTestSuite.java
-        └── exercises/homework/FlightFinderTestSuite.java
+├── main/java/com/kodilla/collections/adv/
+│ ├── exercises/dictionary
+│ ├── exercises/homework
+│ ├── immutable
+│ ├── immutable/homework
+│ └── maps
+│ ├── complex
+│ └── homework
+└── test/java/com/kodilla/collections/adv/
+├── exercises/dictionary
+├── exercises/homework
+└── maps
+├── complex
+└── homework
 ```
 
 ---
@@ -186,41 +124,50 @@ test {
 
 ## Test Suites Overview
 
-### **Dictionary Module**
-Tests verifying:
+### Dictionary Module
+Tests verify:
+- Adding words grouped by part of speech
+- Multimap-like behavior for storing multiple translations
+- Dictionary size and content
+- Retrieval of translations
 
-- adding words grouped by part of speech
-- multimap-like behavior
-- dictionary size and content
-- retrieval of translations
-
-### **Flight Finder Module**
-Tests verifying:
-
-- finding flights by departure airport
-- finding flights by arrival airport
-- repository structure and correctness
-- equality-based filtering logic
-
-### **Immutability Module**
-Tests focus on:
-
-- verifying immutable behavior of `Book` and `BookRecord`
-- ensuring objects cannot be modified
-- checking defensive copying
-- confirming that changes produce new instances
-
-### **Maps Module**
-Tests cover:
-
-- nested map operations
-- value summarization (`Grades`)
-- mapping principals to schools
-- verifying correctness of map lookups
-
-These tests help build strong practical understanding of designing and verifying advanced collections and relationships between objects.
+**Test Suite:** `DictionaryTestSuite`
 
 ---
+
+### Flight Finder Module
+Tests verify:
+- Finding flights by departure airport
+- Finding flights by arrival airport
+- Repository correctness and structure
+- Filtering logic based on equality
+
+**Test Suite:** `FlightFinderTestSuite`
+
+---
+
+### Immutability Module
+Tests verify:
+- Immutable behavior of `Book` and `BookRecord`
+- Objects cannot be modified after creation
+- Defensive copying ensures safety
+- Changes produce new instances instead of modifying originals
+
+**Test Suites:** any test classes covering `Book`, `BookRecord`, and `ImmutableExample`
+
+---
+
+### Maps Module
+Tests verify:
+- Nested map operations and lookups
+- Value summarization (`Grades` class)
+- Mapping principals to schools (`SchoolDirectory`)
+- Correctness of map-related operations and lookups
+
+**Test Suites:** 
+- `BasicMapExampleTest`
+- `ComplexMapExampleTest`
+- `SchoolDirectoryTest`
 
 ## Optional Terminal Commands
 
@@ -255,6 +202,7 @@ GitHub: https://github.com/joanna-kaminska-qa
 
 ## Version History
 
+- **0.3** – Expanded test coverage & structural improvements (achieved >60% total test coverage)
 - **0.2** – README added, improved documentation
 - **0.1** – Initial upload
 
@@ -273,3 +221,4 @@ See the `LICENSE` file for details.
 - Java documentation
 - JUnit documentation
 - Oracle Collections Framework documentation  
+  
